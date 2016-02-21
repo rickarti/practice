@@ -19,7 +19,16 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    @IBOutlet weak var redImage: UIImageView!
+    @IBOutlet weak var blueimage: UIImageView!
 
+    @IBAction func hideRed(sender: AnyObject) {
+        self.redImage.hidden = true
+    }
 
+    @IBAction func hideBlue(sender: AnyObject) {
+        self.blueimage.hidden = true
+    }
 }
 
